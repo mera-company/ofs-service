@@ -1,0 +1,12 @@
+[Unit]
+Description=My OverlayFS Service
+After=network.target
+
+[Service]
+Type=dbus
+BusName=com.ofsservice
+User=root
+ExecStart=/usr/bin/python3 /updater/ofsservice.py
+
+[Install]
+WantedBy=multi-user.target
