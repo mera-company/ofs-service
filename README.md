@@ -1,19 +1,23 @@
 # Over-the-air Overlay File System Service (OTA OFSS)
 
-Service used overlayFS functionality to install updates from external repositories.
+Service provide overlayFS functionality to install updates from external repositories.
 Updates are represented as tar archive for now. 
 
 ## Deployment
 
-You need to run install/install_*.sh shell script are apropriated for your architecture.
-The following script will install service on Ubuntu 20.04/18.04:
+You need script are apropriated for your architecture for run ofsservice as service.
+Example of script for Ubuntu 20.04/18.04:
 ```
-./install_ubuntu2004.sh
+./install/install_ubuntu2004.sh
 ```
 
+Also it is possible to run and use ofsservice from user space.
+
 ### Requirements
+*Kernel version 3.18 or highter (required for overlayfs).
+*Third-party requirements:
 ```
-python3
+python3.8
 python3-pip
 ```
 ### Python libraries Requirements
