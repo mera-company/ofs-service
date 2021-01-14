@@ -5,7 +5,7 @@ Updates are represented as tar archive for now.
 
 ## Deployment
 
-You need script are apropriated for your architecture for run ofsservice as service.
+You need script are apropriated for your architecture for run ofs-service as service.
 Example of script for Ubuntu 20.04/18.04:
 ```
 ./install/install_ubuntu2004.sh
@@ -14,8 +14,8 @@ Example of script for Ubuntu 20.04/18.04:
 Also it is possible to run and use ofsservice from user space.
 
 ### Requirements
-*Kernel version 3.18 or highter (required for overlayfs).
-*Third-party requirements:
+* Kernel version 3.18 or highter (required for overlayfs).
+* Third-party requirements:
 ```
 python3.8
 python3-pip
